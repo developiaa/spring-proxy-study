@@ -8,7 +8,7 @@ import study.developia.proxy.app.v1.*;
 public class AppV1Config {
 
     @Bean
-    public OrderControllerV1 oRderControllerV1() {
+    public OrderControllerV1 orderControllerV1() {
         return new OrderControllerV1Impl(orderServiceV1());
     }
 
