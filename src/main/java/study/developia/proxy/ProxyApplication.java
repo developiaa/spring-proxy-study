@@ -11,6 +11,7 @@ import study.developia.proxy.config.v1_proxy.InterfaceProxyConfig;
 import study.developia.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
 import study.developia.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 import study.developia.proxy.config.v3_proxyfactory.ProxyFactoryConfigV1;
+import study.developia.proxy.config.v3_proxyfactory.ProxyFactoryConfigV2;
 import study.developia.proxy.trace.logtrace.LogTrace;
 import study.developia.proxy.trace.logtrace.ThreadLocalLogTrace;
 
@@ -20,7 +21,8 @@ import study.developia.proxy.trace.logtrace.ThreadLocalLogTrace;
 //@Import(ConcreteProxyConfig.class)
 //@Import(DynamicProxyBasicConfig.class)
 //@Import(DynamicProxyFilterConfig.class)
-@Import(ProxyFactoryConfigV1.class)
+//@Import(ProxyFactoryConfigV1.class)
+@Import(ProxyFactoryConfigV2.class)
 @SpringBootApplication(scanBasePackages = "study.developia.proxy.app") //주의
 public class ProxyApplication {
 
